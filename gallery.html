@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="en" class="animated fadeInUp">
+	<head>
+		<title>Gallery</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="ASSET/css/main.css" />
+		<link rel="icon" type="image/x-icon" href="icons/galleryicon.jpg">
+        <link rel="stylesheet" type="text/css" href="animate.css">
+
+		<style>
+			<style>
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;background:#f9f9f9}.gg-box{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));grid-auto-rows:200px;grid-gap:8px}.gg-box img{object-fit:cover;cursor:pointer;width:100%;height:100%;background:rgba(255,255,255,0.02);border-radius:10px}.gg-box img:hover{opacity:.98}#gg-screen{position:fixed;width:100%;height:100%;z-index:1;top:0;left:0;background:rgba(255,255,255,0.85);z-index:9999;text-align:center}#gg-screen .gg-image{height:100%;display:inline-flex;justify-content:center;align-items:center}#gg-screen .gg-image img{max-width:100%;max-height:100%;margin:0 auto}.gg-bt{width:50px;height:50px;background:rgba(255,255,255,0.6);color:#222;text-align:center;line-height:47px;vertical-align:middle;cursor:pointer;-moz-transition:all .4s ease;-o-transition:all .4s ease;-webkit-transition:all .4s ease;transition:all .4s ease;font-size:25px;border:1px solid rgba(0,0,0,0.05);box-sizing:border-box;padding-left:2px;position:fixed;bottom:10px}.gg-bt:hover{background:rgba(255,255,255,0.8);border:1px solid rgba(0,0,0,0.5)}.gg-close{top:10px}.gg-close,.gg-next{right:10px}.gg-prev{right:61px}.gg-prev,.gg-next{bottom:10px}@media(min-width:478px){.gg-box img:nth-child(3n+0){grid-row-end:span 2}}@media(max-width:768px){.gg-box{grid-template-columns:repeat(auto-fit,minmax(150px,1fr));grid-auto-rows:150px;grid-gap:6px}}@media(max-width:450px){.gg-box{grid-template-columns:repeat(auto-fit,minmax(100px,1fr));grid-auto-rows:100px;grid-gap:4px}}
+    </style>
+    <style>
+    body { background-color: #006994; }
+    h1 {
+     text-align: center;
+     font-color:white;
+     font-family: Comic Sans MS,Comic Sans;
+     padding-top: 15px;
+     }
+  </style>
+
+		</style>
+	</head>
+	<body>
+		<div class="page-wrap">
+
+			<!-- Main -->
+				<section id="main">
+
+					<!-- Header -->
+						<header id="header">
+							<div>PANTOMIME GALLERY</div>
+						</header>
+
+					<!-- Gallery -->
+						<section id="galleries">
+
+							<!-- Photo Galleries -->
+								<div class="gallery">
+
+									<!-- Filters -->
+										<header>
+											<h1>Gallery</h1>
+											</header>
+
+											<div id="gg-screen" hidden></div>
+    <main>
+<div class="container">
+      </div>
+      <div class="main">
+        <div class="gg-box">
+           <img src="images/1.jpeg"><img src="images/2.jpeg"><img src="images/3.jpeg"><img src="images/4.jpeg"><img src="images/5.jpeg"><img src="images/6.jpeg"><img src="images/7.jpeg"><img src="images/8.jpeg"><img src="images/9.jpeg"><img src="images/10.jpeg"><img src="images/11.jpeg"><img src="images/12.jpeg"><img src="images/13.jpeg"><img src="images/14.jpeg"><img src="images/15.jpeg"><img src="images/16.jpeg"><img src="images/17.jpeg"><img src="images/18.jpeg"><img src="images/19.jpeg"><img src="images/20.jpeg"><img src="images/21.jpeg"><img src="images/22.jpeg"><img src="images/23.jpeg"><img src="images/24.jpeg"><img src="images/26.jpeg"><img src="images/29.jpeg"><img src="images/30.jpeg"><img src="images/31.jpg"><img src="images/32.jpeg"><img src="images/33.jpeg"><img src="images/34.jpeg"><img src="images/35.jpg"><img src="images/36.jpg"><img src="images/37.jpeg"><img src="images/38.jpeg"><img src="images/39.jpeg"><img src="images/40.jpeg"><img src="images/105.jpg"><img src="images/104.jpg"><img src="images/103.jpg"><img src="images/102.jpg"><img src="images/101.jpg"><img src="images/100.jpg"><img src="images/99.jpg"><img src="images/98.jpg"><img src="images/97.jpg"><img src="images/96.jpg"><img src="images/95.jpg"><img src="images/94.jpg"><img src="images/93.jpg"><img src="images/92.jpg"><img src="images/91.jpg"><img src="images/90.jpg"><img src="images/89.jpg"><img src="images/88.jpg"><img src="images/87.jpg"><img src="images/86.jpg"><img src="images/85.jpg"><img src="images/84.jpg"><img src="images/82.jpg"><img src="images/81.jpg"><img src="images/80.jpg"><img src="images/79.jpg"><img src="images/78.jpg"><img src="images/77.jpg"><img src="images/76.jpg">
+        </div>
+      </div>
+    </main>
+
+    <script>
+    const body=document.querySelector("body");const images=document.querySelectorAll(".gg-box img");const l=images.length;for(var i=0;i<l;i++){images[i].addEventListener("click",function(g){const b=document.querySelector("#gg-screen");var n=this.src;var d=this;const j=images[0].src;const o=images[l-1].src;b.hidden=false;body.style.overflow="hidden";b.innerHTML='<div class="gg-image"></div><div class="gg-close gg-bt">&times</div><div class="gg-next gg-bt">&rarr;</div><div class="gg-prev gg-bt">&larr;</div>';const m=document.querySelector(".gg-image");const e=document.querySelector(".gg-prev");const a=document.querySelector(".gg-next");const p=document.querySelector(".gg-close");if(l>1){if(n==j){e.hidden=true;var k=false;var f=d.nextElementSibling}else{if(n==o){a.hidden=true;var f=false;var k=d.previousElementSibling}else{var k=d.previousElementSibling;var f=d.nextElementSibling}}}else{e.hidden=true;a.hidden=true}m.innerHTML='<img src="'+n+'">';b.addEventListener("click",function(q){if(q.target==this||q.target==p){b.hidden=true;body.style.overflow="auto"}});e.addEventListener("click",function(){c()});a.addEventListener("click",function(){h()});body.addEventListener("keydown",function(q){if(q.keyCode==37||q.keyCode==38){c()}});body.addEventListener("keydown",function(q){if(q.keyCode==39||q.keyCode==40){h()}});function c(){k=d.previousElementSibling;m.innerHTML='<img src="'+k.src+'">';d=d.previousElementSibling;var q=document.querySelector(".gg-image > img").src;if(q==j){e.hidden=true}else{e.hidden=false;a.hidden=false}}function h(){f=d.nextElementSibling;m.innerHTML='<img src="'+f.src+'">';d=d.nextElementSibling;var q=document.querySelector(".gg-image > img").src;if(q==o){a.hidden=true}else{a.hidden=false;e.hidden=false}}})};
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46156385-1', 'cssscript.com');
+  ga('send', 'pageview');
+
+</script>
+
+										
+						</section>
+
+					
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
