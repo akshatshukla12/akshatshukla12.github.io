@@ -1,6 +1,32 @@
-<!DOCTYPE HTML>
-<html lang="en" class="animated fadeInUp">
-	<head>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Team</title>
+	<link rel="stylesheet" type="text/css" href="css/team join.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/sidebar.css">
+</head>
+<body>
+	<!--HamBurger Icon-->
+<div class="bars" id="nav-action">
+  <span class="bar"> </span>
+</div>
+
+<!--Navbar Links-->
+<nav id="nav">
+  <ul>
+    <li class="shape-circle circle-two"><a href="au.html">About Us</a></li>
+    <li class="shape-circle circle-one"><a href="events.html">Events</a></li>
+    <li class="shape-circle circle-three"><a href="login.html">Registration</a></li>
+    <li class="shape-circle circle-five">
+      <a href="index1.html">Home</a>
+    </li>
+  </ul>
+</nav>
+
+<!--Main Body Content-->
+
+<head>
 		<title>Gallery</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -31,9 +57,7 @@
 				<section id="main">
 
 					<!-- Header -->
-						<header id="header">
-							<div>MINARE GALLERY</div>
-						</header>
+						
 
 					<!-- Gallery -->
 						<section id="galleries">
@@ -84,4 +108,22 @@
 			<script src="assets/js/main.js"></script>
 
 	</body>
+	
+	<script>
+		// Setting up the Variables
+var bars = document.getElementById("nav-action");
+var nav = document.getElementById("nav");
+
+
+//setting up the listener
+bars.addEventListener("click", barClicked, false);
+
+
+//setting up the clicked Effect
+function barClicked() {
+  bars.classList.toggle('active');
+  nav.classList.toggle('visible');
+}
+	</script>
+</body>
 </html>
