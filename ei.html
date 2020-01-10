@@ -1,10 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Team</title>
+	<link rel="stylesheet" type="text/css" href="css/team join.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/sidebar.css">
+</head>
+<body>
+	<!--HamBurger Icon-->
+<div class="bars" id="nav-action">
+  <span class="bar"> </span>
+</div>
+
+<!--Navbar Links-->
+<nav id="nav">
+  <ul>
+    <li class="shape-circle circle-two"><a href="au.html">About Us</a></li>
+    <li class="shape-circle circle-one"><a href="events.html">Events</a></li>
+    <li class="shape-circle circle-three"><a href="login.html">Registration</a></li>
+    <li class="shape-circle circle-five">
+      <a href="index1.html">Home</a>
+    </li>
+  </ul>
+</nav>
+
+<!--Main Body Content-->
+
 <link rel="stylesheet" type="text/css" href="css/ei.css">
 
 
-<section class="info">
-  <img src="assets/img/watch-26-1.png">
-  <h1>Events</h1>
-</section>
+	<div class="team" id="team">
+		<div class="container">
+			<h3 class="title">Minare Team</h3>
+			<h3 class="title1">CORE TEAM <hr></h3>
+			</div>
+			</div>
 <section class="cards-wrapper">
   <div class="card-grid-space">
     <div class="num">1</div>
@@ -125,3 +155,22 @@
   </div>
   <!-- https://images.unsplash.com/photo-1520839090488-4a6c211e2f94?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=38951b8650067840307cba514b554ba5&auto=format&fit=crop&w=1350&q=80 -->
 </section>
+	
+	<script>
+		// Setting up the Variables
+var bars = document.getElementById("nav-action");
+var nav = document.getElementById("nav");
+
+
+//setting up the listener
+bars.addEventListener("click", barClicked, false);
+
+
+//setting up the clicked Effect
+function barClicked() {
+  bars.classList.toggle('active');
+  nav.classList.toggle('visible');
+}
+	</script>
+</body>
+</html>
