@@ -37,13 +37,13 @@
           }
         }
         h3.title {
-            color: #3181e6;
+            color: #c64c28;
             font-size: 50px;
             text-align: center;
             margin-bottom: 1em;
             font-weight: 600;
         }
-        h3.title1{color: black;
+        h3.title1{color: #268f18;
             font-size: 20px;
             text-align: left;
             margin-bottom: 1em;
@@ -64,7 +64,7 @@
         /*-- Team --*/
 
         .team {
-            background: #f5f5f5;
+            background: #eff151;
             padding: 5em 0;
         }
 
@@ -73,8 +73,8 @@
         }
 
         .team-grid h4 {
-            font-size: 25px;
-            color: #000;
+            font-size: 15px;
+            color: black;
             font-weight: 600;
             margin: 40px 0 20px;
         }
@@ -120,7 +120,7 @@
             height: 30px;
             font-size: 1em;
             color: #fff;
-            background: #faad81;
+            background: #f18d48;
             position: absolute;
             top: 0;
             left: 0;
