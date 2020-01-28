@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<title>EVENTS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url('assets/img/gallery-60-1.jpg');
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+<img src="https://www.bhp.com/-/media/images/2017/171113_escondida_hq.jpg" height="520" width="1400px"/>
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Date time</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-purple" style="font-size:70px">EXODUS</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-black"></span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE EVENT</span></h5>
+    <p>Mining is a field where small decisions will reflect in huge expenditure thus to make the effective use out of the available resources, proper planning and optimization of every parameter is a must which will be a key in deciding the profitability of any company.</br>
+This exciting event gives an opportunity to the budding engineers to get a taste of the problems that are often encountered by Managers and Executives of a mine, Not only experience but also a chance to propose a solution after proper analysis of the problem. The sole purpose at heart is to improve the understanding of problems that the industry encounters quite often and help the students develop strategies to counter them.</br>
+This event not only challenges the planning skills of participant but the optimization and computational approaches. Everyone does but to do in least cost & impacts is the key. </p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i></i></p>
+      <p></p>
+    </div>
+    <img src="assets/img/eventsimg/e3.jpeg" style="width:100%;max-width:1000px" class="w3-margin-top"/>
+    <p><strong>Coordinator-</strong></p>
+    <p><strong>Co-coordinator-</strong> </p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">PRIZES <br/>1.INR-5000 <br/>2.INR-3000<br/>3.INR-2000</div>
+      </a>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>prize1 </h5>
+      <p class="w3-text-grey">\value</p><br>
+    
+    </div>  
+    <img src="" style="width:100%;max-width:1000px;margin-top:32px;"/>
+	<p><strong>PROBLEM STATEMENT :-</strong><br/>The Problem Statement to be updated soon</p>
+    <p><strong>ELIGIBILTY :-</strong><br/>The participant students must be currently pursuing education (undergraduate or postgraduate) in a recognized institute. The participants may be asked to furnish the supporting documents as to prove the fore mentioned criteria.</p>
+      <p><strong>STRUCTURE :-</strong></br>1. There will be ONE round only.</br>
+2. The event will be hosting a presentation cum questionnaire round whereby the teams will have to present their work done on the problem before other teams and Judges.</br>
+3. The final top THREE team winners will be declared on the basis of the scores achieved by the teams in the second round.</p>
+    <p><strong>RULES :-</strong></br>1. Only teams who have registered would be able to participate.</br>
+2. Each team can contain a maximum of Two (2) participants. Students from different colleges can form a single team.</br>
+3. The whole analysis of the problem statement should be done by the participants themselves. Plagiarism will attract cancellation of participation.</br>
+4. Each team will get 6 minutes for presentation and 3 minutes for Q/A session.</br>
+5. Teams presenting their analysis in the second round should come with a proper presentation of not more than 15 slides.</br>
+6. The decision of the judges would be final and binding.</br>
+7. Only Top three teams will get certificate of merit. However other teams would get a certificate of participation.</br>
+8.Any modification or changes to rules may be made on spot with due information to participants.</br>
+9. Participants showing any involvement with judge will be disqualified. </p>
+  </div>
+</div>
+
+
+<!-- End page content -->
+</div>
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
