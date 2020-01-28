@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<title>EVENTS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url('assets/img/gallery-60-1.jpg');
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+<img src="https://www.bhp.com/-/media/images/2017/171113_escondida_hq.jpg" height="520" width="1400px"/>
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Date time</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-purple" style="font-size:70px">CARTEBLANCHE</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-black"></span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE EVENT</span></h5>
+    <p>We understand the need of a platform that the budding scientists of India demanded to showcase their research aptitude and come up with a plethora of ideas that can change the face of mining industry. Thus we gladly present the paper presentation event of MINARE’20- Carte Blanche where ideas and passion meets reality.</br>
+Carte Blanche is the paper presentation event of MINARE‘20. Participants are required to whet their presentation skills as well as technical skills in mining and allied sciences. The presentations will be on a small topic related to mining or of any literary interest. A well-researched and well-presented topic will ensure personal upliftment of knowledge and boost the confidence of a participant and will also help him contribute to the mining industry. </p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i></i></p>
+      <p></p>
+    </div>
+    <img src="assets/img/eventsimg/e5.jpg" style="width:100%;max-width:1000px" class="w3-margin-top"/>
+    <p><strong>Coordinator-</strong></p>
+    <p><strong>Co-coordinator-</strong> </p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">PRIZES <br/>1.INR-5000 <br/>2.INR-3000<br/>3.INR-2000</div>
+      </a>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>prize1 </h5>
+      <p class="w3-text-grey">\value</p><br>
+    
+    </div>  
+    <img src="" style="width:100%;max-width:1000px;margin-top:32px;"/>
+	<p><strong>PROBLEM STATEMENT :-</strong><br/>Please find the attachment.All the portions of our topic is given there<a href="assets/document/carteblanche.pdf" target="blank"><b> DOWNLOAD</b></a> the attachment.</p>
+    <p><strong>ELIGIBILTY :-</strong><br/>The participant students must be currently pursuing education (diploma,undergraduate or postgraduate) in a recognized institute. The participants may be asked to furnish the supporting documents as to prove the fore mentioned criteria.</p>
+      <p><strong>STRUCTURE :-</strong></br>1. The competition will be organized in two phases.</br>
+2. The PRELIMINARY round will aim to float initial challenge to all the participants.</br>
+3. Teams will be short listed on the basis of the merit of their preliminary round presentation. Short listed participants will be eligible to appear for final round of Paper Presentation.</br>
+4. Final round will be a presentation cum questionnaire round whereby the participants will have to present their work done on the topic before other teams and judges.</br>
+5. The winners will be declared on the basis of the scores achieved by the participants in the final round. </p>
+    <p><strong>RULES :-</strong></br>1. Only teams who have registered online would be able to participate.</br>
+2. Each team can contain a maximum of Three (3) participants. Students from different colleges can form a single team.</br>
+3. The teams are not allowed to submit any copyright material or any research paper of any professor etc. If someone is found using any such material team will be disqualified from the event.</br>
+4. Papers that have already been accepted in standard national conferences or published in journals shall get a direct entry to the second round. However, Authors must make sure their participation in MINARE does not lead to violation of Copyright laws of conferences/seminars they have previously attended.</br>
+5. Papers presented in MINARE can be presented at other events also.</br>
+6. Teams qualified for final round will get maximum 8 minutes time to present and 6 minutes will be for following Q/A round.</br>
+7. The decision of the judges would be final and binding.</br>
+8. Only Top three winners will get certificate of merit. However other participants would get a certificate of participation.</br>
+9. Rules can be subjected to modification. </p>
+  </div>
+</div>
+
+
+<!-- End page content -->
+</div>
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
