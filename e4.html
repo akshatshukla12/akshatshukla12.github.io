@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<title>EVENTS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url('assets/img/gallery-60-1.jpg');
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+<img src="https://www.bhp.com/-/media/images/2017/171113_escondida_hq.jpg" height="520" width="1400px"/>
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Date time</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-purple" style="font-size:70px">AFFICHE</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-black"></span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE EVENT</span></h5>
+    <p>Posters give a face to any fest. Posters bring out the best creativity in terms of design. They are a vital element of the fest and help them to reach out to a large number of people.Eye catching posters with a beautiful design are a sight to behold. Poster design is an art. MINARE 2020, invites the cool designers out there to let your mind create your magnum opus on theme MINARE. </p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i></i></p>
+      <p></p>
+    </div>
+    <img src="assets/img/eventsimg/e4.png" style="width:100%;max-width:1000px" class="w3-margin-top"/>
+    <p><strong>Coordinator-</strong></p>
+    <p><strong>Co-coordinator-</strong> </p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">PRIZES <br/>1.INR-3000 <br/>2.INR-1500<br/>3.INR-1000</div>
+      </a>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>prize1 </h5>
+      <p class="w3-text-grey">\value</p><br>
+    
+    </div>  
+    <img src="" style="width:100%;max-width:1000px;margin-top:32px;"/>
+    <p><strong>ELIGIBILTY :-</strong><br/>nyone pursuing education (graduation or post graduation) from any recognized institute and must have registered for MINARE 2K20.</p>
+      <p><strong>THEME/TOPIC :-</strong></br>1. Different Haulage Systems used in Under Ground Mining.</br>
+2. Blasting Patterns used in Mining (Either open cast or underground).</br>
+3. Crushers used for Comminution in Mineral Processing Plant.</br>
+4. Failures in Underground Mining.</br>
+(Ex: Roof failure, side failureetc.)</br>
+5. Heavy Earth Moving Machinery(HEMM) used in open cast mining</br>
+6. Evolution of support systems in Underground mining</br>
+(Ex: from wood to roof bolting)</br>
+7. Ventilation systems in underground mining</br>
+8. Drilling Technology used in mining</br>
+9. Underground coal extracting machineries</br>
+10. Advanced Surveying Technology.</br>
+(Ex: Electronic theodolite, Total station, etc.)</br>
+11. Layout of Mining Methods.</br>
+(Minimum 4 methods should be mentioned in poster.)</br>
+12. Instrumentation for monitoring ground movement.</br>
+13. Personal Protective Equipment(PPE) for Miners.</br>
+14. Instrumentation for Air Particulate (Dust) Monitoring.</br>
+(Ex: Konimeter, Simslin,etc.)</br>
+15. Flame Safety Lamps </p>
+    <p><strong>RULES :-</strong></br>1. Only teams who have registered online would be able to participate.</br>
+2. Each team can contain a maximum of Two (2) participants. Students from different colleges can form a single team.</br>
+3. The teams are not allowed to submit any copyright poster. If someone is found using any such material team will be disqualified from the event.</br>
+4. Poster should be done in A3 size (vertical or horizontal).</br>
+5. Participants should submit their Color Printed poster before the event starts.</br>
+6. The decision of the judges would be final and binding.</br>
+7. Only Top three winners will get certificate of merit. However other participants would get a certificate of participation. </p>
+  </div>
+</div>
+
+
+<!-- End page content -->
+</div>
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
