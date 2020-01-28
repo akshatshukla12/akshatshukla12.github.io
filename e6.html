@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<title>EVENTS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url('assets/img/gallery-60-1.jpg');
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+<img src="https://www.bhp.com/-/media/images/2017/171113_escondida_hq.jpg" height="520" width="1400px"/>
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Date time</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-purple" style="font-size:70px">KRITANSH</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-black"></span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE EVENT</span></h5>
+    <p>With the earth continuously puzzling geologists and mining engineers with its diverse and assorted physiognomy, the need of amendment and revolutionary exploration technique arises.
+ KRITANSH is the quiz competition which will contain some mind-boggling and interesting questions from the field of Mining, Geology, Processing and any other relevant topics related to mining field.
+The quiz intends to boost the enthusiasm and awareness among the participants. It also aims at providing the students an exposure to the on-going problems and advancement in the field of mining.
+KRITANSH is being organized with a vision to crisscross the dexterity and the proficiency to analyse real world problems of the participants. With participation from various colleges and a sprinkle of brainstorming question, Geo-Mining Quiz promises to entertain the crowd. </p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i></i></p>
+      <p></p>
+    </div>
+    <img src="assets/img/eventsimg/e6.jpg" style="width:100%;max-width:1000px" class="w3-margin-top"/>
+    <p><strong>Coordinator-</strong></p>
+    <p><strong>Co-coordinator-</strong> </p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">PRIZES <br/>1.INR-4000 <br/>2.INR-3000<br/>3.INR-2000</div>
+      </a>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>prize1 </h5>
+      <p class="w3-text-grey">\value</p><br>
+    
+    </div>  
+    <img src="" style="width:100%;max-width:1000px;margin-top:32px;"/>
+    <p><strong>ELIGIBILTY :-</strong><br/>The participant students must be currently pursuing education (undergraduate or postgraduate IN MINING) in a recognized institute.</p>
+      <p><strong>STRUCTURE :-</STRONG></br>1. The competition will be organized in two phases.</br>
+2. The first round will have a written examination related to Geology & Mining from which FIVE teams will be selected for the second round.</br>
+3. The second round will consist of both theoretical as well as practical rounds like rock identification including audio visual rounds also. </p>
+    <p><strong>RULES :-</strong></br>1. Only teams who have registered online would be able to participate.</br>
+2. Students from different colleges can form a single team.</br>
+3. Each team can contain a maximum of THREE (3) participants.</br>
+4. The decision of the judges would be final and binding.</br>
+5. Only Top three teams will get certificate of merit. However other teams would get a certificate of participation. </p>
+  </div>
+</div>
+
+
+<!-- End page content -->
+</div>
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
