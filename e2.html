@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<title>EVENTS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url('assets/img/gallery-60-1.jpg');
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+<img src="https://www.bhp.com/-/media/images/2017/171113_escondida_hq.jpg" height="520" width="1400px"/>
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Date time</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-purple" style="font-size:70px">BID-O-WIN</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-black"></span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE EVENT</span></h5>
+    <p>Mining is a primary activity of a series of drilling, blasting, loading and transportation; but not mining engineering.</br>
+We, as mining engineers are expected to apply overall intelligence on the technical, economic, managerial and environmental aspects of mining activities concerning company’s stake and profits, planning and ventilation, optimization of explosives, transportation cost and manpower involved. Indeed that makes us distinguished from other fields of tertiary activities. BID TO WIN is a bidding-cum-quizzing event which covers all the aspects of an engineer of subtleness, diplomacy and a dashing personality. Being hosted in MINARE 2K17, it promises for the participants the taste of being an engineer of high repute with lots of constraints, obstacles and challenges pending before him to run a mining company- a scenario which world class engineers face. Of course, rough and wild guesses are humorous, but you can be lucky enough to hit the right nail. We hope for a huge participation from various colleges with lots of fun and entertainment. </p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i></i></p>
+      <p></p>
+    </div>
+    <img src="assets/img/eventsimg/e2.jpg" style="width:100%;max-width:1000px" class="w3-margin-top"/>
+    <p><strong>Coordinator-</strong></p>
+    <p><strong>Co-coordinator-</strong> </p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">PRIZES <br/>1.INR-4000 <br/>2.INR-3000<br/>3.INR-1500</div>
+      </a>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>prize1 </h5>
+      <p class="w3-text-grey">\value</p><br>
+    
+    </div>  
+    <img src="" style="width:100%;max-width:1000px;margin-top:32px;"/>
+    <p><strong>ELIGIBILTY :-</strong><br/>The participants must be currently pursuing education (undergraduate or postgraduate in Mining Engineering) in a recognized institute.</p>
+      <p><strong>STRUCTURE :-</strong></br>The event will be organized in two phases:</br>
+a. Phase-I: Minbizz</br>
+b. Phase-II: Minquiz</br>
+a. Minbizz - Minbizz deals with basic understanding of economics and market situations of mining engineering. Being aware of current market conditions will enable a manger to work efficiently. Participants will be given varying mine market situations with a certain amount of incentives and an objective to maximize a certain set of goods taking care of the hurdles coming in the dynamically varying market. The team which earns the maximum number of a given set would be declared as winner. Top teams from this virtual market would be selected for the Minquiz.</br>
+b. Minquiz - The teams selected from Minbizz would be sitting for the second phase.Minquiz will consist of several rounds of intensive quizzing from various technical, non-technical and allied aspects of Mining and Geology with simultaneous pen and paper rounds comprising of easy numerical guesses. </p>
+    <p><strong>RULES :-</strong></br>1. Only teams who have registered online would be able to participate.
+2. This is a team event and each team would contain a maximum of THREE participants.</br>
+3. Students from different colleges can form a single team.</br>
+4. For phase-I, any market situation can be given at any instant during the event.</br>
+5. In case of any discrepancy, the decision of the judges would be final and binding.</br>
+6. For the overall event, only the participants of the top three teams would be awarded certificate of merit. However, other participants would get a certificate of participation. </p>
+  </div>
+</div>
+
+
+<!-- End page content -->
+</div>
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
